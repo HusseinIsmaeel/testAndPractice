@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    {% for item in cart %}
+    <p>{{ item.name }} <a href="/remove_from_cart/{{ item.name }}">Remove</a></p>
+    {% endfor %}
+</body>
+</html>
